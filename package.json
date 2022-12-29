@@ -1,10 +1,14 @@
 {
-  "name": "eslint-config-codestates",
+  "name": "@codestates-engineering/eslint-config-codestates",
   "version": "0.0.1",
   "private": false,
   "author": "fronttigger <fronttigger@gmail.com>",
   "license": "MIT",
   "description": "CodeStates's ESLint config",
+  "repository": "https://github.com/CodeStates-Engineering/eslint-config-codestates",
+  "bugs": {
+    "url": "https://github.com/CodeStates-Engineering/eslint-config-codestates/issues"
+  },
   "main": "index.js",
   "files": [
     "rules",
