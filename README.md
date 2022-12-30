@@ -1,6 +1,6 @@
 # eslint-config-codestates [![CI][ci-image]][ci-url]
 
-[ci-image]: https://github.com/CodeStates-Engineering/eslint-config-codestates/actions/workflows/ci.yaml/badge.svg?branch=main
+[ci-image]: https://github.com/CodeStates-Engineering/eslint-config-codestates/actions/workflows/ci.yaml/badge.svg
 [ci-url]: https://github.com/CodeStates-Engineering/eslint-config-codestates/actions/workflows/ci.yaml
 
 CodeStates에서 작성하는 공통 린트 규칙 모음입니다.
