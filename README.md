@@ -74,7 +74,9 @@ yarn add -D @codestates-engineering/eslint-config-codestates
 
 2. 프로젝트 루트에 `.eslintrc` 파일을 만들고 추가한 린트 의존성을 작성합니다.
 
-```json
+만약 추가, 확장할 설정이 있다면 주석 부분에 추가합니다.
+
+```js
 {
   "extends": [
     "@codestates-engineering/eslint-config-codestates"
@@ -109,8 +111,8 @@ React 기반의 **프론트엔드 프로젝트**라면 아래와 같이 `.eslint
 
 2. 프로젝트 루트에 `.prettierrc` 파일을 만들고 추가한 의존성을 작성합니다.
 
-```json
-"@codestates-engineering/eslint-config-codestates/prettierrc"
+```js
+'@codestates-engineering/eslint-config-codestates/prettierrc'
 ```
 
 ## Versioning
