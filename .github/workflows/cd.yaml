@@ -8,11 +8,12 @@ on:
 env:
   NODE_VERSION: '16.x'
   NPM_REGISTRY_URL: 'https://npm.pkg.github.com/'
-  NODE_AUTH_TOKEN: ${{ secrets.CSE_NPM_TOKEN }}
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      CSE_NPM_TOKEN: ${{secrets.CSE_NPM_TOKEN}}
 
     steps:
       - name: 🧰 use node.js ${{ env.NODE_VERSION }}
@@ -22,6 +23,8 @@ jobs:
           registry-url: ${{ env.NPM_REGISTRY_URL }}
 
       - uses: actions/checkout@v3
+        with:
+          token: ${{secrets.CSE_NPM_TOKEN}}
 
       - name: 🗂 depenency install
         run: npm ci
