@@ -9,7 +9,6 @@ on:
 env:
   NODE_VERSION: '16.x'
   NPM_REGISTRY_URL: 'https://npm.pkg.github.com/'
-  NODE_AUTH_TOKEN: ${{ secrets.CSE_NPM_TOKEN }}
 
 jobs:
   lint:
