@@ -1,0 +1,30 @@
+name: CD
+
+on:
+  push:
+    branches:
+      - 'main'
+
+env:
+  NODE_VERSION: '16.x'
+  NPM_REGISTRY_URL: 'https://npm.pkg.github.com/'
+  NODE_AUTH_TOKEN: ${{ secrets.CSE_NPM_TOKEN }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧰 use node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          registry-url: ${{ env.NPM_REGISTRY_URL }}
+
+      - uses: actions/checkout@v3
+
+      - name: 🗂 depenency install
+        run: npm ci
+
+      - name: 🛫 release deploy
+        run: npm run deploy
