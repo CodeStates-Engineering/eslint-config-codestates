@@ -1,7 +1,3 @@
-import {} from '@test'
-
-import {} from 'react'
-
 /**
  * @description
  * 프로젝트 루트에 있는 index.js에 해당되는 규칙을 테스트합니다.

@@ -31,6 +31,7 @@ test (린트 테스트 모음)
 frontend.js (프론트엔드 전용 린트 모듈)
 index.js (린트 모듈)
 prettierrc.js (프리티어 모듈)
+stylelint.js (스타일린트 모듈)
 ```
 
 ## 설치
@@ -104,8 +105,8 @@ React 기반의 **프론트엔드 프로젝트**라면 아래와 같이 `.eslint
 
 ```json
 {
-  "prettier": "prettier '**/*.{json,yaml,md}' --check",
-  "prettier:fix": "prettier '**/*.{json,yaml,md}' --write"
+  "prettier": "prettier '**/*.{json,yaml,md,js,ts,tsx}' --check",
+  "prettier:fix": "prettier '**/*.{json,yaml,md,js,ts,tsx}' --write"
 }
 ```
 
@@ -113,6 +114,25 @@ React 기반의 **프론트엔드 프로젝트**라면 아래와 같이 `.eslint
 
 ```js
 '@codestates-engineering/eslint-config-codestates/prettierrc'
+```
+
+### Stylelint
+
+1. 사용하는 프로젝트의 `package.json` scripts 속성에 아래 명령어를 추가합니다.
+
+```json
+{
+  "lint:style": "stylelint './**/*.{js,ts,tsx}'",
+  "lint:style:fix": "stylelint './**/*.{js,ts,tsx}' --fix"
+}
+```
+
+2. 프로젝트 루트에 `.stylelintrc` 파일을 만들고 추가한 의존성을 작성합니다.
+
+```json
+{
+  "extends": ["@codestates-engineering/eslint-config-codestates/stylelint"]
+}
 ```
 
 ## Versioning
