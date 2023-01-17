@@ -1,15 +1,14 @@
 module.exports = {
+  parser: '@babel/eslint-parser',
   extends: [
-    'standard',
-    'prettier',
-    'eslint:recommended',
+    'airbnb',
     'plugin:import/recommended',
     'plugin:promise/recommended',
     ...[
       './rules/base',
-      './rules/import',
       './rules/prettier',
       './rules/promise',
+      './rules/import',
     ].map(require.resolve),
   ],
   env: {

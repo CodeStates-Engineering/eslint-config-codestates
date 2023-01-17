@@ -16,3 +16,13 @@
  *   }, [])
  * }
  */
+
+// import { useEffect, useState } from 'react'
+
+// function ReactHooksTest() {
+//   const [text, setText] = useState('')
+
+//   useEffect(() => {
+//     const message = `hi ${text}`
+//   }, [])
+// }
