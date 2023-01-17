@@ -1,7 +1,6 @@
 {
   "root": true,
-  "plugins": ["import"],
-  "extends": ["../../index.js"],
+  "extends": "../../index.js",
   "parserOptions": {
     "requireConfigFile": false
   }
