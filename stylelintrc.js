@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
-  plugins: ['stylelint-order'],
+  plugins: ['stylelint-order', 'stylelint-csstree-validator'],
   overrides: [
     {
       files: ['**/*.{js,jsx,ts,tsx}'],

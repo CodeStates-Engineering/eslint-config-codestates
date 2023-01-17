@@ -68,6 +68,7 @@
     "stylelint": "^14.16.1",
     "stylelint-config-prettier": "^9.0.4",
     "stylelint-config-standard": "^29.0.0",
+    "stylelint-csstree-validator": "^2.0.0",
     "stylelint-order": "^6.0.1"
   },
   "devDependencies": {
