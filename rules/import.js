@@ -11,8 +11,7 @@ module.exports = {
         },
         groups: [
           'builtin',
-          'external',
-          'internal',
+          ['external', 'internal'],
           ['index', 'sibling', 'parent'],
           'object',
           'unknown',
@@ -20,14 +19,14 @@ module.exports = {
         ],
         pathGroups: [
           {
-            pattern: 'react*',
+            pattern: '{react*,react*/**}',
             group: 'external',
             position: 'after',
           },
           {
             pattern: '{next*,next*/**}',
             group: 'external',
-            position: 'before',
+            position: 'after',
           },
           {
             pattern: '@*',
