@@ -6,38 +6,35 @@ module.exports = {
       {
         'newlines-between': 'always',
         alphabetize: {
-          order: 'asc', // 알파벳 순서 정렬 방식
-          caseInsensitive: false, // 알파벳 대소문자 구분
+          order: 'asc',
+          caseInsensitive: false,
         },
         groups: [
           'builtin',
           ['external', 'internal'],
+          'unknown',
           ['index', 'sibling', 'parent'],
           'object',
           'type',
         ],
         pathGroups: [
           {
-            pattern: 'react',
-            group: 'builtin',
+            pattern: 'react*',
+            group: 'external',
             position: 'after',
           },
           {
-            pattern: 'next',
-            group: 'builtin',
-            position: 'after',
+            pattern: 'next*',
+            group: 'external',
+            position: 'before',
           },
           {
-            pattern: 'next/**',
-            group: 'builtin',
-            position: 'after',
-          },
-          {
-            pattern: '@/**',
-            group: 'internal',
-            position: 'after',
+            pattern: '@*',
+            group: 'unknown',
+            position: 'before',
           },
         ],
+        pathGroupsExcludedImportTypes: [],
       },
     ],
     /**
