@@ -11,10 +11,11 @@ module.exports = {
         },
         groups: [
           'builtin',
-          ['external', 'internal'],
-          'unknown',
+          'external',
+          'internal',
           ['index', 'sibling', 'parent'],
           'object',
+          'unknown',
           'type',
         ],
         pathGroups: [
@@ -24,14 +25,14 @@ module.exports = {
             position: 'after',
           },
           {
-            pattern: 'next*',
+            pattern: '{next*,next*/**}',
             group: 'external',
             position: 'before',
           },
           {
             pattern: '@*',
-            group: 'unknown',
-            position: 'before',
+            group: 'internal',
+            position: 'after',
           },
         ],
         pathGroupsExcludedImportTypes: [],
