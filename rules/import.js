@@ -4,33 +4,40 @@ module.exports = {
     'import/order': [
       'error',
       {
+        'newlines-between': 'always',
+        alphabetize: {
+          order: 'asc', // 알파벳 순서 정렬 방식
+          caseInsensitive: false, // 알파벳 대소문자 구분
+        },
         groups: [
-          ['external', 'builtin'],
-          'internal',
-          ['index', 'parent', 'sibling'],
+          'builtin',
+          ['external', 'internal'],
+          ['index', 'sibling', 'parent'],
+          'object',
+          'type',
         ],
         pathGroups: [
           {
             pattern: 'react',
-            group: 'external',
-            position: 'before',
+            group: 'builtin',
+            position: 'after',
           },
           {
             pattern: 'next',
-            group: 'external',
-            position: 'before',
+            group: 'builtin',
+            position: 'after',
           },
           {
             pattern: 'next/**',
-            group: 'external',
-            position: 'before',
+            group: 'builtin',
+            position: 'after',
           },
           {
             pattern: '@/**',
             group: 'internal',
+            position: 'after',
           },
         ],
-        'newlines-between': 'always',
       },
     ],
     /**
