@@ -8,12 +8,3 @@
  *
  * console.log('경고'); // warn
  */
-
-// import styled from '@emotion/styled'
-
-// const Good = styled.div`
-//   display: flex;
-
-//   color: red;
-//   font-size: large;
-// `
