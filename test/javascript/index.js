@@ -1,9 +1,3 @@
-import {} from '../../frontend'
-import {} from '@emotion/react'
-
-import {} from 'next'
-// import React from 'react'
-
 /**
  * @description
  * 프로젝트 루트에 있는 index.js에 해당되는 규칙을 테스트합니다.
@@ -14,3 +8,12 @@ import {} from 'next'
  *
  * console.log('경고'); // warn
  */
+
+// import styled from '@emotion/styled'
+
+// const Good = styled.div`
+//   display: flex;
+
+//   color: red;
+//   font-size: large;
+// `
