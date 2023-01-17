@@ -3,6 +3,7 @@
 ## v0.0.3
 
 - stylelint rules & 모듈 추가
+- airbnb 룰 추가
 
 ## v0.0.2
 

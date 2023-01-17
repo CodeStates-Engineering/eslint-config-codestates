@@ -21,5 +21,6 @@ module.exports = {
     //     html: true,
     //   },
     // ],
+    // "react/jsx-one-expression-per-line": "off"
   },
 }
