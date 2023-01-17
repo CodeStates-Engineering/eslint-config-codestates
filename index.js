@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
     'airbnb',
+    'prettier',
     'plugin:import/recommended',
     'plugin:promise/recommended',
     ...[
