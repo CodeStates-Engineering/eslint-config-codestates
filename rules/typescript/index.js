@@ -39,5 +39,20 @@ module.exports = {
      * @link https://typescript-eslint.io/rules/explicit-member-accessibility/
      */
     '@typescript-eslint/explicit-member-accessibility': 'off',
+    /**
+     * @description 파일 확장자 생략 여부
+     * @link https://github.com/import-js/eslint-plugin-import/blob/v2.27.4/docs/rules/extensions.md
+     */
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+        json: 'never',
+      },
+    ],
   },
 }
