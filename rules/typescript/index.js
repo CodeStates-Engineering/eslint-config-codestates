@@ -15,7 +15,10 @@ module.exports = {
      * @description any 타입 작성 금지
      * @link https://typescript-eslint.io/rules/no-explicit-any/
      */
-    '@typescript-eslint/no-explicit-any': ['error', { ignoreRestArgs: true }],
+    '@typescript-eslint/no-explicit-any': [
+      'error',
+      { ignoreRestArgs: true, fixToUnknown: true },
+    ],
     /**
      * @description 변수 정의 전 사용 금지
      * @link https://typescript-eslint.io/rules/no-use-before-define/
