@@ -17,6 +17,15 @@
  * }
  */
 
+import styled from '@emotion/styled'
+
+const Good = styled.div`
+  display: flex;
+
+  color: red;
+  font-size: large;
+`
+
 // import { useEffect, useState } from 'react'
 
 // function ReactHooksTest() {
