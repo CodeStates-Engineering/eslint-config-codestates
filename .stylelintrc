@@ -1,5 +1,5 @@
 {
-  "extends": "./stylelintrc.js",
+  "extends": "./stylelint.js",
   "parserOptions": {
     "requireConfigFile": false
   }
