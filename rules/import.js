@@ -66,7 +66,5 @@ module.exports = {
      * @link https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-named-as-default-member.md
      */
     'import/no-named-as-default-member': 'off',
-
-    'import/no-extraneous-dependencies': 'off',
   },
 }
