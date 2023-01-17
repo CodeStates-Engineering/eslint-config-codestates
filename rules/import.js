@@ -11,25 +11,24 @@ module.exports = {
         },
         groups: [
           'builtin',
-          ['external', 'internal'],
-          ['index', 'sibling', 'parent'],
-          'object',
-          'unknown',
+          'external',
+          'internal',
+          ['sibling', 'index', 'parent'],
           'type',
         ],
         pathGroups: [
           {
-            pattern: '{react*,react*/**}',
+            pattern: '{react*,react*/**,next*,next*/**}',
             group: 'external',
             position: 'after',
           },
           {
-            pattern: '{next*,next*/**}',
-            group: 'external',
-            position: 'after',
+            pattern: '{@tanstack/**,@emotion/**,@storybook/**}',
+            group: 'internal',
+            position: 'before',
           },
           {
-            pattern: '@*',
+            pattern: '{@*,@*/**}',
             group: 'internal',
             position: 'after',
           },
@@ -67,5 +66,7 @@ module.exports = {
      * @link https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-named-as-default-member.md
      */
     'import/no-named-as-default-member': 'off',
+
+    'import/no-extraneous-dependencies': 'off',
   },
 }
