@@ -15,7 +15,7 @@
     "index.js",
     "frontend.js",
     "prettierrc.js",
-    "stylelint.js"
+    "stylelintrc.js"
   ],
   "keywords": [
     "codestates",
