@@ -46,5 +46,10 @@ module.exports = {
      * @link https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
      */
     'react/no-unused-prop-types': 'warn',
+    /**
+     * @description 컴포넌트 내 컴포넌트 구성
+     * @link https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unstable-nested-components.md
+     */
+    'react/no-unstable-nested-components': 'warn',
   },
 }
