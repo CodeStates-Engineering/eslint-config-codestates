@@ -66,5 +66,22 @@ module.exports = {
      * @link https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-named-as-default-member.md
      */
     'import/no-named-as-default-member': 'off',
+    /**
+     * @description 단일 내보내기 여부
+     * @link https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/prefer-default-export.md
+     */
+    'import/prefer-default-export': 'off',
+    /**
+     * @description Anchor 하이퍼 링크 여부
+     * @link https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/20b082a890f8e27320c6b2b3587edc6d0b735c97/docs/rules/anchor-is-valid.md
+     */
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        specialLink: ['hrefLeft', 'hrefRight'],
+        aspects: ['invalidHref', 'preferButton'],
+      },
+    ],
   },
 }
