@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.0
+
+- 정식 버전 배포
+
 ## v0.0.3
 
 - stylelint rules & 모듈 추가
