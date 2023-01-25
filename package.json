@@ -45,6 +45,7 @@
     "deploy:canary": "sh ./scripts/canary-publish.sh",
     "version": "npm version"
   },
+  "bundleDependencies":true,
   "dependencies": {
     "@babel/eslint-parser": "^7.19.1",
     "@stylelint/postcss-css-in-js": "^0.38.0",
