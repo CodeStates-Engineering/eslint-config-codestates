@@ -52,4 +52,4 @@ module.exports = {
      */
     'react/no-unstable-nested-components': 'warn',
   },
-}
+};

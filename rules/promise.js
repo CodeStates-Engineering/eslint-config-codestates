@@ -11,4 +11,4 @@ module.exports = {
      */
     'promise/prefer-await-to-then': 'off',
   },
-}
+};

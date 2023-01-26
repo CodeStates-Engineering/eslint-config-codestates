@@ -113,7 +113,7 @@ React 기반의 **프론트엔드 프로젝트**라면 아래와 같이 `.eslint
 2. 프로젝트 루트에 `.prettierrc` 파일을 만들고 추가한 의존성을 작성합니다.
 
 ```js
-'@codestates-engineering/eslint-config-codestates/prettierrc'
+'@codestates-engineering/eslint-config-codestates/prettierrc';
 ```
 
 ### Stylelint
