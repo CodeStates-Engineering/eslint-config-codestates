@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.0.1
+
+- semi 규칙 변경
+- yarn berry 대응
+
 ## v1.0.0
 
 - 정식 버전 배포

@@ -6,4 +6,4 @@ module.exports = {
      */
     curly: ['error', 'all'],
   },
-}
+};
