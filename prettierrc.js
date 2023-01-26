@@ -7,5 +7,5 @@ module.exports = {
   endOfLine: 'lf',
   useTabs: false,
   singleQuote: true,
-  semi: false,
+  semi: true,
 }
