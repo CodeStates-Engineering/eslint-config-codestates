@@ -5,7 +5,7 @@ module.exports = {
      * @description 세미 콜론 여부
      * @link https://eslint.org/docs/latest/rules/semi
      */
-    semi: [2, 'never'],
+    semi: [2, 'always'],
     /**
      * @description 최상위 모듈
      * @link https://eslint.org/docs/latest/rules/global-require
@@ -42,4 +42,4 @@ module.exports = {
      */
     'consistent-return': 'off',
   },
-}
+};
