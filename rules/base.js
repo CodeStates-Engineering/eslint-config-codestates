@@ -41,5 +41,10 @@ module.exports = {
      * @link https://eslint.org/docs/latest/rules/consistent-return
      */
     'consistent-return': 'off',
+    /**
+     * @description 콘솔 여부
+     * @link https://eslint.org/docs/latest/rules/no-console
+     */
+    'no-console': ['error', { allow: ['warn', 'error'] }],
   },
 };
