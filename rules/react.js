@@ -66,6 +66,10 @@ module.exports = {
      * @link https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md
      */
     'react/destructuring-assignment': 'off',
+    /**
+     * @description PropTypes 사용 여부
+     * @link https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prop-types.md
+     */
     'react/prop-types': 'off',
   },
 };
