@@ -51,5 +51,21 @@ module.exports = {
      * @link https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unstable-nested-components.md
      */
     'react/no-unstable-nested-components': 'warn',
+    /**
+     * @description 버튼 엘리먼트 타입 명시 여부
+     * @link https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/button-has-type.md
+     */
+    'react/button-has-type': 'off',
+    /**
+     * @description JSX 내 중괄호 여부
+     * @link https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md
+     */
+    'react/jsx-curly-brace-presence': 'off',
+    /**
+     * @description 구조분해할당 여부
+     * @link https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md
+     */
+    'react/destructuring-assignment': 'off',
+    'react/prop-types': 'off',
   },
 };

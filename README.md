@@ -32,6 +32,7 @@ frontend.js (프론트엔드 전용 린트 모듈)
 index.js (린트 모듈)
 prettierrc.js (프리티어 모듈)
 stylelint.js (스타일린트 모듈)
+tsconfig.json
 ```
 
 ## 설치
@@ -68,7 +69,7 @@ yarn add -D @codestates-engineering/eslint-config-codestates
 
 ```json
 {
-  "lint": "eslint './**/*.{js,ts,tsx}'",
+  "lint": "eslint './src/**/*.{js,ts,tsx}'",
   "lint:fix": "npm run lint -- --fix"
 }
 ```
@@ -105,8 +106,8 @@ React 기반의 **프론트엔드 프로젝트**라면 아래와 같이 `.eslint
 
 ```json
 {
-  "prettier": "prettier '**/*.{json,yaml,md,js,ts,tsx}' --check",
-  "prettier:fix": "prettier '**/*.{json,yaml,md,js,ts,tsx}' --write"
+  "prettier": "prettier './src/*.{json,yaml,md,js,ts,tsx}' --check",
+  "prettier:fix": "prettier './src/*.{json,yaml,md,js,ts,tsx}' --write"
 }
 ```
 
@@ -122,8 +123,8 @@ React 기반의 **프론트엔드 프로젝트**라면 아래와 같이 `.eslint
 
 ```json
 {
-  "lint:style": "stylelint './**/*.{js,ts,tsx}'",
-  "lint:style:fix": "stylelint './**/*.{js,ts,tsx}' --fix"
+  "lint:style": "stylelint './src/**/*.{js,ts,tsx}'",
+  "lint:style:fix": "stylelint './src/**/*.{js,ts,tsx}' --fix"
 }
 ```
 
