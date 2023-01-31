@@ -16,7 +16,7 @@ module.exports = {
      * @link https://typescript-eslint.io/rules/no-explicit-any/
      */
     '@typescript-eslint/no-explicit-any': [
-      'error',
+      'warn',
       { ignoreRestArgs: true, fixToUnknown: true },
     ],
     /**
