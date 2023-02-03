@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.3
+
+- react/function-component-definition 규칙 수정
+
 ## v1.0.2
 
 - no-console 규칙 수정
