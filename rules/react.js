@@ -28,8 +28,8 @@ module.exports = {
      * @link https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/function-component-definition.md
      */
     'react/function-component-definition': [
-      0,
-      { namedcomponents: 'arrow-function' },
+      'error',
+      { namedComponents: 'arrow-function' },
     ],
     /**
      * @description 빈 JSX 반환 여부
