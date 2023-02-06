@@ -45,6 +45,6 @@ module.exports = {
      * @description 콘솔 여부
      * @link https://eslint.org/docs/latest/rules/no-console
      */
-    'no-console': ['error', { allow: ['warn', 'error'] }],
+    'no-console': 'warn',
   },
 };
