@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.5
+
+- react/jsx-no-useless-fragment 규칙 수정
+
 ## v1.0.4
 
 - no-console 규칙 수정

@@ -35,7 +35,7 @@ module.exports = {
      * @description 빈 JSX 반환 여부
      * @link https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-useless-fragment.md
      */
-    'react/jsx-no-useless-fragment': 'warn',
+    'react/jsx-no-useless-fragment': 'off',
     /**
      * @description 배열 내 index 키 사용 여부
      * @link https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
