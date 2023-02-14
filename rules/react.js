@@ -71,5 +71,10 @@ module.exports = {
      * @link https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prop-types.md
      */
     'react/prop-types': 'off',
+    /**
+     * @description 알 수 없는 DOM 속성 작성 금지
+     * @link https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md
+     */
+    'react/no-unknown-property': ['error', { ignore: ['css'] }],
   },
 };
