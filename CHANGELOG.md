@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.0.6
+
+- README.md Trouble shooting 목차 추가
+- react/no-unknown-property 규칙 추가
+
 ## v1.0.5
 
 - react/jsx-no-useless-fragment 규칙 수정
