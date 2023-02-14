@@ -189,3 +189,42 @@ Github Actions를 통해 CI/CD를 관리합니다.
 6. 병합시 자동으로 CD가 진행됩니다.
 7. CD 진행 이후 자동으로 Release Tag가 생성되며 생성된 Tag에 배포된 버전의 변경사항을 작성합니다.
 8. CD 이후 `develop` 브랜치를 최신화합니다.
+
+## Trouble shooting
+
+### vscode 환경에서 파일 저장시 AutoFix가 동작하지 않는 경우 `settings.json`에 아래의 코드를 추가합니다.
+
+> ```json
+> "editor.formatOnSave": true,
+> "editor.codeActionsOnSave": {
+>   "source.fixAll.stylelint": true,
+>   "source.fixAll.eslint": true
+> },
+> "stylelint.validate": [
+>   "css",
+>   "scss",
+>   "less",
+>   "postcss",
+>   "typescriptreact",
+>   "typescript",
+>   "javascript",
+>   "javascriptreact"
+> ],
+> "editor.formatOnSave": true,
+> "editor.defaultFormatter": "esbenp.prettier-vscode",
+> "[javascript]": {
+>   "editor.defaultFormatter": "esbenp.prettier-vscode"
+> },
+> "[typescript]": {
+>   "editor.defaultFormatter": "esbenp.prettier-vscode"
+> },
+> "[javascriptreact]": {
+>   "editor.defaultFormatter": "esbenp.prettier-vscode"
+> },
+> "[typescriptreact]": {
+>   "editor.defaultFormatter": "esbenp.prettier-vscode"
+> },
+> "[json]": {
+>   "editor.defaultFormatter": "esbenp.prettier-vscode"
+> },
+> ```
