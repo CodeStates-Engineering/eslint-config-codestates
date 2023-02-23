@@ -4,6 +4,7 @@
 
 - README.md Trouble shooting 목차 추가
 - react/no-unknown-property 규칙 추가
+- @typescript-eslint/consistent-type-imports 규칙 추가
 
 ## v1.0.5
 
