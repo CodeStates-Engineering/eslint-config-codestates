@@ -51,5 +51,10 @@ module.exports = {
         json: 'never',
       },
     ],
+    /**
+     * @description type import 유형
+     * @link https://typescript-eslint.io/rules/consistent-type-imports/
+     */
+    '@typescript-eslint/consistent-type-imports': 'error',
   },
 };
