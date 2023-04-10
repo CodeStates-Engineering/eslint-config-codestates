@@ -1,8 +1,6 @@
 // NOTE: https://typescript-eslint.io/
 module.exports = {
   rules: {
-    'no-extra-parens': 'off',
-    '@typescript-eslint/no-extra-parens': 'error',
     /**
      * @description 사용하지 않는 변수 사용
      * @link https://typescript-eslint.io/rules/no-unused-vars/
