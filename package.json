@@ -1,6 +1,6 @@
 {
   "name": "@codestates-engineering/eslint-config-codestates",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "private": false,
   "author": "fronttigger <fronttigger@gmail.com>",
   "license": "MIT",
